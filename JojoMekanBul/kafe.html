@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Jojo</title>
+      <meta name="keywords" content="Jojo Restoran, mekan bul, izmit mekan bul, en iyi mekanlar, kocaeli mekanlar">
+      <meta name="description" content="Mekan mı arıyorsun? Doğru adrestesin">
+      <meta name="author" content="Jojo">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/logo.png" type="image/png" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="css/meanmenu.css">
+   </head>
+   <body>
+
+      
+      <!-- header section start -->
+      <div class="container-fluid">
+         <!-- Logoyu burada menü dışına ekliyoruz -->
+         <div class="logo" style="position: absolute; top: 40px; left: 90px;">
+            <a href="index.html"><img src="images/logo.png" style="width: 100px; height: auto;"></a>
+      </div>
+      
+      <!-- header section end -->
+
+      <!-- layout main section start -->
+      <div class="container-fluid">
+         <div class="layout_main">
+
+<!-- banner section start -->
+<div class="banner_section">
+   <div class="container">
+      <div class="menu_main">
+           <div class="custome_menu" >
+            <title>Banner Section</title>
+            <style>
+               .banner_taital, .banner_text {
+                  padding: 0px 0;
+               }
+               /* Menü öğelerini yan yana hizalamak için flex kullanımı */
+               .custome_menu ul {
+               padding-top: 25px;
+               display: flex;
+               justify-content: center; /* Menü öğelerini ortalar */
+               flex-wrap: wrap; /* Ekran daraldıkça menü öğelerinin yeni satıra geçmesine izin verir */
+               }  
+
+               .custome_menu ul li {
+                  margin-right: 20px; /* Menü öğeleri arasına boşluk */
+                  position: relative; /* Dropdown için */
+
+               }
+
+               .custome_menu ul li a {
+                  text-decoration: none;
+                  color: white; /* İstediğiniz renk */
+                  font-size: 30px;
+                  padding: 10px 10px;
+               }
+
+               .custome_menu ul li a:hover {
+                  color: green; /* Üzerine gelince renk değişimi */
+               }
+               /* Mobil uyumlu yapı için medya sorguları */
+@media (max-width: 768px) {
+    .custome_menu ul li a {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .custome_menu {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custome_menu ul li {
+        margin-right: 10px;
+    }
+}
+               /* Dropdown menüyü gizler */
+               .dropdown-menu {                   
+   position: absolute; /* 'flex' yerine 'absolute' daha uygun */                   
+   top: 100%;                   
+   left: 0;                   
+   background-color: #333;                   
+   list-style: none;                   
+   padding: 5px; /* İç boşluğu küçült */                   
+   margin: 0px;                   
+   z-index: 1000;                   
+   width: auto; /* Genişliği içeriğe göre ayarla */
+   min-width: 200px; /* Eğer minimum genişlik istiyorsan ekleyebilirsin */
+   white-space: nowrap;
+
+}
+
+/* Dropdown menü öğelerinin stilleri */
+.dropdown-menu li a {                   
+   text-decoration: none;                   
+   color: white; /* Dropdown menüdeki linklerin rengi */                   
+   padding: 10px 15px; /* Menü öğeleri arasındaki boşluğu ayarla */                   
+   display: block;                   
+   font-size: 14px; /* Yazı boyutunu uygun şekilde ayarla */
+   white-space: nowrap; /* Tek satıra sığması için bu özelliği ekle */
+}
+
+
+.dropdown-menu li a:hover {                   
+    color: green; /* Üzerine gelince renk değişimi */                
+}
+            .hover-effect ul {
+    display: none; /* Varsayılan olarak gizli */
+    position: flex;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+.hover-effect:hover ul, 
+.hover-effect ul:hover {
+    display: block; /* Hover yapıldığında alt menüyü göster */
+}
+
+.hover-effect:hover {
+    background-color: black; /* Hover olduğunda arka plan değişimi */
+}
+
+.hover-effect ul li a {
+    color: white; /* Menüdeki linklerin rengi */
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.hover-effect ul li a:hover {
+    color: green; /* Üzerine gelindiğinde link rengi değişimi */
+}
+
+.kafeyazi_section {
+    padding: 50px 0px;
+}
+
+.kafeyazi_entry {
+    display: flex;
+    align-items: flex-start; /* Görsel ve yazıları üstten hizalamak için */
+    margin-bottom: 30px; /* İki bloğun altındaki boşluk */
+}
+
+.kafeyazi_image_container {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Yazıyı görselin altında ortalamak için */
+}
+
+.kafeyazi_image_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image_caption {
+    font-size: 15px; /* Ufak bir yazı boyutu */
+    color: #ffffff; /* Yazı rengi */
+    margin-top: 5px; /* Görsel ile yazı arasına az boşluk */
+    text-align: center; /* Yazıyı ortala */
+}
+
+
+.kafeyazi_text_container {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.kafeyazi_title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 5px; /* Başlık ile yazı arasına az boşluk bırak */
+}
+
+.kafeyazi_description {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px; /* Yazı ile liste arasındaki boşluğu küçült */
+    line-height: 1.6;
+}
+
+.kafeyazi_list {
+    list-style-type: none; /* Default list işaretlerini kaldır */
+    padding-left: 0; /* Padding sıfırla */
+    margin-top: 5px; /* Liste ile yazı arasındaki boşluğu küçült */
+}
+
+.kafeyazi_list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative; /* Yuvarlak için pozisyon ayarlandı */
+    padding-left: 25px; /* Yuvarlak işareti için boşluk bırak */
+}
+
+.kafeyazi_list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px; /* Ortalamak için yukarı kaydır */
+    width: 10px;
+    height: 10px;
+    background-color: #00540b; /* Yuvarlak işaretin rengi */
+    border-radius: 50%; /* Yuvarlak yapmak için border-radius */
+}
+
+@media (max-width: 768px) {
+    .kafeyazi_entry {
+        flex-direction: column;
+    }
+
+    .kafeyazi_text_container {
+        padding-left: 0;
+    }
+}
+
+.altkısım_section {
+    padding-top: 0px; /* Üstten 50px boşluk ekler */
+}
+
+.carousel {
+    margin-top: 0px; /* Slider yapısının da aşağıda olmasını sağlar */
+}
+
+.altkısım_taital {
+    width: 100%;
+    float: left;
+    font-size: 0px;
+    color: #eaebe7;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 0px;
+}
+
+.altkısım_section_2 {
+    width: 100%;
+    float: left;
+    background-image: url(../images/about-bg.png);
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.altkısım_taital_main {
+    width: 100%;
+    float: left;
+    padding-top: 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.altkısım_text {
+    width: 100%;
+    float: center;
+    font-size: 30px;
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.baslik {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    font-weight: bold;
+}
+.rating {
+    font-size: 20px;
+    color: #FFD700; /* Altın rengi */
+    margin-top: 5px;
+}
+
+.rating .star {
+    display: inline-block;
+    color: #ddd; /* Varsayılan boş yıldız rengi */
+}
+
+.rating[data-rating="5"] .star:nth-child(-n+5),
+.rating[data-rating="4"] .star:nth-child(-n+4),
+.rating[data-rating="3"] .star:nth-child(-n+3),
+.rating[data-rating="2"] .star:nth-child(-n+2),
+.rating[data-rating="1"] .star:nth-child(-n+1) {
+    color: #FFD700; /* Dolu yıldız rengi */
+}
+.dropdown-toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+}
+            </style>
+
+            <div class="menu_main">
+               <div class="custome_menu">
+                 <ul class="custome_menu d-flex">
+                   <li class="basliklar"><a href="index.html">Anasayfa</a></li>
+                   <li class="hover-effect">
+                     <a href="service.html">Hizmetler</a>
+                     <button class="dropdown-toggle-btn">▼</button>
+                     <ul class="dropdown-menu">
+                       <li><a href="kahvaltı.html">Kahvaltı</a></li>
+                       <li><a href="kafe.html">Kafe</a></li>
+                       <li><a href="bar.html">Bar</a></li>
+                       <li><a href="restoran.html">Restoran</a></li>
+                     </ul>
+                   </li>
+                   <li class="hover-effect"><a href="blog.html">Fırsatlar</a></li>
+                   <li class="hover-effect">
+                     <a href="about.html">Hakkımızda</a>
+                     <button class="dropdown-toggle-btn">▼</button>
+                     <ul class="dropdown-menu">
+                       <li><a href="vizyonmisyon.html">Vizyon&Misyon</a></li>
+                     </ul>
+                   </li>
+                   <li><a href="contact.html">İletişim</a></li>
+                 </ul>
+               </div>
+             </div>
+             
+             <!-- kafe Yazı Section Start -->
+<div class="kafeyazi_section">
+   <div class="container">
+       <div class="row kafeyazi_entry">
+        <div class="col-sm-12">
+            <h1 class ="baslik">Kafe</h1>
+         </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_image_container">
+                   <img src="images/kafe1.png" alt="Kafe Image" class="img-fluid" style="width: 500px; height: 300px;">
+                   <p class="image_caption">Her gün 07.00-00.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="5">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_text_container">
+                   <h2 class="kafeyazi_title" style="font-weight: bold;">Hoşgör Pastanesi / İzmit</h2>
+                   <p class="kafeyazi_description">Kocaeli`nin sembol isimlerinden biri olan Hoşgör, Mustafa Vericioğlu`nun sahibi olduğu İnci Unlu Mamuller bünyesine katıldıktan sonra dekorasyonundan menüsüne her konuda büyük bir değişim yaşadı. Artık pek çok Kocaelili`nin gençliğindeki ‘pastane` görünümünden çok uzakta olan Hoşgör, yeni konsepti, lezzetli menüsü ve nefis unlu mamulleriyle daha uzun yıllar bizimle birlikte olacak gibi görünüyor.</p>
+                   <ul class="kafeyazi_list">
+                       <li>Çay 25 TL</li>
+                       <li>Kahve 120 TL </li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+<div class="kafeyazi_section">
+   <div class="container">
+       <div class="row kafeyazi_entry">
+
+           <div class="col-md-6">
+               <div class="kafeyazi_image_container">
+                   <img src="images/kafe2.png" alt="Kafe Image" class="img-fluid" style="width: 500px; height: 300px;">
+                   <p class="image_caption">Her gün 08.00-00.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="4">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_text_container">
+                   <h2 class="kafeyazi_title" style="font-weight: bold;">Hub / Yenicuma</h2>
+                   <p class="kafeyazi_description">Hub Kafe, eşsiz kahve deneyimiyle şehre damgasını vuran bir mekandır. Özenle seçilmiş çekirdeklerden hazırlanan kahveleri, her yudumda kendine hayran bırakır. Kahvelerinin yoğun aroması ve taze öğütülmüş tadı, kahve severler için adeta bir şölen sunar. Hub Kafe'nin baristaları, kahve sanatında ustalaşmış ve her fincanda mükemmelliği yakalamayı başarmıştır. İster klasik bir espresso, ister zengin aromalı bir latte tercih edin, burada kahve keyfi her zaman en üst düzeydedir. Samimi atmosferi ve kaliteli kahve sunumuyla Hub Kafe, dostlarınızla buluşmak veya yalnızca bir fincan kahvenin tadını çıkarmak için ideal bir yerdir.</p>
+                   <ul class="kafeyazi_list">
+                       <li>Americano 120 TL</li>
+                       <li>Latte 120 TL</li>
+                       <li>Çay 30 TL</li>
+                       <li>Filtre Kahve 80 TL</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="kafeyazi_section">
+   <div class="container">
+       <div class="row kafeyazi_entry">
+           <div class="col-md-6">
+               <div class="kafeyazi_image_container">
+                   <img src="images/kafe3.png" alt="Kafe Image" class="img-fluid" style="width: 500px; height: 300px;">
+                   <p class="image_caption">Her gün 08.30-23.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="4">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_text_container">
+                   <h2 class="kafeyazi_title " style="font-weight: bold;">Macondo / İzmit</h2>
+                   <p class="kafeyazi_description">Macondo Kafe, estetik ve özenle tasarlanmış iç mekanıyla göz dolduran bir mekandır. Tasarımı, sıcak ve davetkar bir atmosfer yaratırken, içeri adım attığınızda sizi hemen rahatlatır. Kahve kalitesi belki en iyilerden olmasa da, buradaki samimi ortam ve huzur dolu atmosfer, kahvenin ötesine geçer. Güler yüzlü personeli ve arkadaşlarınızla keyifli vakit geçirebileceğiniz rahat oturma alanlarıyla Macondo Kafe, iç mekan dizaynı ve sıcak havasıyla kendine çeker. Sessizce kitap okumak ya da arkadaşlarınızla hoş sohbetler etmek için ideal bir yerdir.</p>
+                   <ul class="kafeyazi_list">
+                       <li>Kahve 120 TL</li>
+                       <li>Çay 30 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+<div class="kafeyazi_section">
+   <div class="container">
+       <div class="row kafeyazi_entry">
+           <div class="col-md-6">
+               <div class="kafeyazi_image_container">
+                   <img src="images/kafe4.png" alt="kafe Image" class="img-fluid" style="width: 500px; height: 300px;">
+                   <p class="image_caption">Her gün 08.00-01.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="5">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_text_container">
+                   <h2 class="kafeyazi_title" style="font-weight: bold;">Miles / Yahyakaptan</h2>
+                   <p class="kafeyazi_description">Miles Kafe, özellikle açık hava alanıyla ön plana çıkan, canlı ve enerjik bir mekandır. Ortam her zaman cıvıl cıvıl, kahkahalar ve sohbetlerle doludur. Renkli ve dinamik atmosferi, kafenin bahçesinde vakit geçirirken kendinizi adeta bir tatil beldesinde hissettirir. Ağaçların gölgesinde serin bir esinti eşliğinde kahvenizi yudumlamak, buranın en keyifli yanlarından biridir. Hem rahatlatıcı hem de hareketli bir atmosfere sahip olan Miles Kafe, açık havada güzel zaman geçirmek isteyenler için mükemmel bir buluşma noktasıdır.</p>
+                   <ul class="kafeyazi_list">
+                       <li>Kahve 120 TL </li>
+                       <li>Çay 40 TL </li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+<div class="kafeyazi_section">
+   <div class="container">
+       <div class="row kafeyazi_entry">
+
+           <div class="col-md-6">
+               <div class="kafeyazi_image_container">
+                   <img src="images/kafe5.png" alt="kafe Image" class="img-fluid" style="width: 500px; height: 300px;">
+                   <p class="image_caption">Her gün 08.00-00.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="4">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kafeyazi_text_container">
+                   <h2 class="kafeyazi_title" style="font-weight: bold;">Coffinity / Yahyakaptan</h2>
+                   <p class="kafeyazi_description">Coffinity, modern ve şık tasarımıyla öne çıkan, keyifli bir kafe. Özellikle harmanladığı kahveleriyle dikkat çekiyor, her yudumda farklı bir tat deneyimi sunuyor. Sıcak atmosferi ve kaliteli kahve seçenekleriyle dostlarınızla buluşmak ya da sakin bir mola vermek için ideal bir mekan. Coffinity, rahat ortamıyla kahve keyfini bir üst seviyeye taşıyor.</p>
+                   <ul class="kafeyazi_list">
+                       <li>Kahve 120 TL</li>
+                       <li>Çay 25 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+
+<!-- kafe Yazı Section End -->
+
+            </div>
+            <div class="altkısım_section_2 layout_padding">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- footer section start -->
+            <div class="footer_section">
+               <div class="container">
+                  <div class="footer_sectio_2">
+                     <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                           <h2 class="useful_text">Menü</h2>
+                           <div class="footer_menu">
+                              <ul>
+                                 <li><a href="index.html">Anasayfa</a></li>
+                                 <li class="active"><a href="service.html">Hizmetler</a></li>
+                                  <li><a href="blog.html">Fırsatlar</a></li>
+                                 <li><a href="about.html">Hakkımızda</a></li>
+                                 <li><a href="contact.html">İletişim</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <h2 class="useful_text">İLETİŞİM</h2>
+                           <div class="map_icon"><a href="https://www.google.com/maps/place/Red+Light+District+Residence+On+Ground+Floor/@52.3716886,4.8923058,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609c0ac20b159:0x8b4ac67c76ad9b1e!8m2!3d52.3716886!4d4.8944945!16s%2Fg%2F11hdj1ytlx"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left15">Pieter Jacobszstraat 25, 1012 HL Amsterdam, Hollanda</span></a></div>
+                           <div class="map_icon"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left15">+90 507 883 35 94</span></a></div>
+                           <div class="map_icon"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left15">info@jojo.com</span></a></div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="social_icon">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- footer section end -->
+         </div>
+      </div>
+      <!-- layout main section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">Tüm Haklar Jojo Holding Bünyesinde Saklıdır.</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+      <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+      </script> 
+   </body>
+</html>
