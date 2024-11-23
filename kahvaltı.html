@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Jojo</title>
+      <meta name="keywords" content="Jojo Restoran, mekan bul, izmit mekan bul, en iyi mekanlar, kocaeli mekanlar">
+      <meta name="description" content="Mekan mı arıyorsun? Doğru adrestesin">
+      <meta name="author" content="Jojo">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/logo.png" type="image/png" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="css/meanmenu.css">
+   </head>
+   <body>
+
+      
+      <!-- header section start -->
+      <div class="container-fluid">
+         <!-- Logoyu burada menü dışına ekliyoruz -->
+         <div class="logo" style="position: absolute; top: 40px; left: 90px;">
+            <a href="index.html"><img src="images/logo.png" style="width: 100px; height: auto;"></a>
+      </div>
+      
+      <!-- header section end -->
+
+      <!-- layout main section start -->
+      <div class="container-fluid">
+         <div class="layout_main">
+
+<!-- banner section start -->
+<div class="banner_section">
+   <div class="container">
+      <div class="menu_main">
+           <div class="custome_menu" >
+            <title>Banner Section</title>
+            <style>
+               .banner_taital, .banner_text {
+                  padding: 0px 0;
+               }
+               /* Menü öğelerini yan yana hizalamak için flex kullanımı */
+               .custome_menu ul {
+               padding-top: 25px;
+               display: flex;
+               justify-content: center; /* Menü öğelerini ortalar */
+               flex-wrap: wrap; /* Ekran daraldıkça menü öğelerinin yeni satıra geçmesine izin verir */
+               }  
+
+               .custome_menu ul li {
+                  margin-right: 20px; /* Menü öğeleri arasına boşluk */
+                  position: relative; /* Dropdown için */
+
+               }
+
+               .custome_menu ul li a {
+                  text-decoration: none;
+                  color: white; /* İstediğiniz renk */
+                  font-size: 30px;
+                  padding: 10px 10px;
+               }
+
+               .custome_menu ul li a:hover {
+                  color: green; /* Üzerine gelince renk değişimi */
+               }
+               /* Mobil uyumlu yapı için medya sorguları */
+@media (max-width: 768px) {
+    .custome_menu ul li a {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .custome_menu {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custome_menu ul li {
+        margin-right: 10px;
+    }
+}
+               /* Dropdown menüyü gizler */
+               .dropdown-menu {                   
+   position: absolute; /* 'flex' yerine 'absolute' daha uygun */                   
+   top: 100%;                   
+   left: 0;                   
+   background-color: #333;                   
+   list-style: none;                   
+   padding: 5px; /* İç boşluğu küçült */                   
+   margin: 0px;                   
+   z-index: 1000;                   
+   width: auto; /* Genişliği içeriğe göre ayarla */
+   min-width: 200px; /* Eğer minimum genişlik istiyorsan ekleyebilirsin */
+   white-space: nowrap;
+
+}
+
+/* Dropdown menü öğelerinin stilleri */
+.dropdown-menu li a {                   
+   text-decoration: none;                   
+   color: white; /* Dropdown menüdeki linklerin rengi */                   
+   padding: 10px 15px; /* Menü öğeleri arasındaki boşluğu ayarla */                   
+   display: block;                   
+   font-size: 14px; /* Yazı boyutunu uygun şekilde ayarla */
+   white-space: nowrap; /* Tek satıra sığması için bu özelliği ekle */
+}
+
+
+.dropdown-menu li a:hover {                   
+    color: green; /* Üzerine gelince renk değişimi */                
+}
+            .hover-effect ul {
+    display: none; /* Varsayılan olarak gizli */
+    position: flex;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+.hover-effect:hover ul, 
+.hover-effect ul:hover {
+    display: block; /* Hover yapıldığında alt menüyü göster */
+}
+
+.hover-effect:hover {
+    background-color: black; /* Hover olduğunda arka plan değişimi */
+}
+
+.hover-effect ul li a {
+    color: white; /* Menüdeki linklerin rengi */
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.hover-effect ul li a:hover {
+    color: green; /* Üzerine gelindiğinde link rengi değişimi */
+}
+
+.kahvaltiyazi_section {
+    padding: 50px 0px;
+}
+
+.kahvaltiyazi_entry {
+    display: flex;
+    align-items: flex-start; /* Görsel ve yazıları üstten hizalamak için */
+    margin-bottom: 30px; /* İki bloğun altındaki boşluk */
+}
+
+.kahvaltiyazi_image_container {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Yazıyı görselin altında ortalamak için */
+}
+
+.kahvaltiyazi_image_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image_caption {
+    font-size: 15px; /* Ufak bir yazı boyutu */
+    color: #ffffff; /* Yazı rengi */
+    margin-top: 5px; /* Görsel ile yazı arasına az boşluk */
+    text-align: center; /* Yazıyı ortala */
+}
+
+
+.kahvaltiyazi_text_container {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.kahvaltiyazi_title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 5px; /* Başlık ile yazı arasına az boşluk bırak */
+}
+
+.kahvaltiyazi_description {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px; /* Yazı ile liste arasındaki boşluğu küçült */
+    line-height: 1.6;
+}
+
+.kahvaltiyazi_list {
+    list-style-type: none; /* Default list işaretlerini kaldır */
+    padding-left: 0; /* Padding sıfırla */
+    margin-top: 5px; /* Liste ile yazı arasındaki boşluğu küçült */
+}
+
+.kahvaltiyazi_list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative; /* Yuvarlak için pozisyon ayarlandı */
+    padding-left: 25px; /* Yuvarlak işareti için boşluk bırak */
+}
+
+.kahvaltiyazi_list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px; /* Ortalamak için yukarı kaydır */
+    width: 10px;
+    height: 10px;
+    background-color: #00540b; /* Yuvarlak işaretin rengi */
+    border-radius: 50%; /* Yuvarlak yapmak için border-radius */
+}
+
+@media (max-width: 768px) {
+    .kahvaltiyazi_entry {
+        flex-direction: column;
+    }
+
+    .kahvaltiyazi_text_container {
+        padding-left: 0;
+    }
+}
+
+.altkısım_section {
+    padding-top: 0px; /* Üstten 50px boşluk ekler */
+}
+
+.carousel {
+    margin-top: 0px; /* Slider yapısının da aşağıda olmasını sağlar */
+}
+
+.altkısım_taital {
+    width: 100%;
+    float: left;
+    font-size: 0px;
+    color: #eaebe7;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 0px;
+}
+
+.altkısım_section_2 {
+    width: 100%;
+    float: left;
+    background-image: url(../images/about-bg.png);
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.altkısım_taital_main {
+    width: 100%;
+    float: left;
+    padding-top: 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.altkısım_text {
+    width: 100%;
+    float: center;
+    font-size: 30px;
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.baslik {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 20px;
+    color: #FFD700; /* Altın rengi */
+    margin-top: 5px;
+}
+
+.rating .star {
+    display: inline-block;
+    color: #ddd; /* Varsayılan boş yıldız rengi */
+}
+
+.rating[data-rating="5"] .star:nth-child(-n+5),
+.rating[data-rating="4"] .star:nth-child(-n+4),
+.rating[data-rating="3"] .star:nth-child(-n+3),
+.rating[data-rating="2"] .star:nth-child(-n+2),
+.rating[data-rating="1"] .star:nth-child(-n+1) {
+    color: #FFD700; /* Dolu yıldız rengi */
+}
+.dropdown-toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+}
+            </style>
+
+            <div class="menu_main">
+               <div class="custome_menu">
+                 <ul class="custome_menu d-flex">
+                   <li class="basliklar"><a href="index.html">Anasayfa</a></li>
+                   <li class="hover-effect">
+                     <a href="service.html">Hizmetler</a>
+                     <button class="dropdown-toggle-btn">▼</button>
+                     <ul class="dropdown-menu">
+                       <li><a href="kahvaltı.html">Kahvaltı</a></li>
+                       <li><a href="kafe.html">Kafe</a></li>
+                       <li><a href="bar.html">Bar</a></li>
+                       <li><a href="restoran.html">Restoran</a></li>
+                     </ul>
+                   </li>
+                   <li class="hover-effect"><a href="blog.html">Fırsatlar</a></li>
+                   <li class="hover-effect">
+                     <a href="about.html">Hakkımızda</a>
+                     <button class="dropdown-toggle-btn">▼</button>
+                     <ul class="dropdown-menu">
+                       <li><a href="vizyonmisyon.html">Vizyon&Misyon</a></li>
+                     </ul>
+                   </li>
+                   <li><a href="contact.html">İletişim</a></li>
+                 </ul>
+               </div>
+             </div>
+             
+             <!-- Kahvaltı Yazı Section Start -->
+<div class="kahvaltiyazi_section">
+   <div class="container">
+       <div class="row kahvaltiyazi_entry">
+        <div class="col-sm-12">
+            <h1 class ="baslik">Kahvaltı</h1>
+         </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_image_container">
+                   <img src="images/kahvaltı1.png" alt="Kahvaltı Image" class="img-fluid" style="width: 500px; height: 300px; ">
+                   <p class="image_caption">Her gün 08.00-18.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="5">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_text_container">
+                   <h2 class="kahvaltiyazi_title" style="font-weight: bold;">Serpmeköy Trabzon Köy Kahvaltısı / Yenişehir</h2>
+                   <p class="kahvaltiyazi_description">Burası taze ve doğal ürünlerle hazırlanan bu kahvaltılar ile güne enerji dolu bir başlangıç yapman için ideal. Serpme kahvaltı menüsü ile birlikte gelen pişiler de sınırsız olarak masana getiriliyor. Burada kahvaltı sadece bir öğün değil, aynı zamanda bir ritüel. Her bir lokmada Karadeniz'in otantik tatlarını keşfetmeye hazır olmalısın. Serpmeköy’de her sabah, doğanın ve geleneklerin buluştuğu bir lezzet şölenine dönüşüyor.</p>
+                   <ul class="kahvaltiyazi_list">
+                       <li>Serpme kahvaltı 950 TL</li>
+                       <li>Etli serpme 1200 TL</li>
+                       <li>Menemenli kahvaltı tabağı 420 TL</li>
+                       <li>Kuymaklı kahvaltı tabağı 420 TL</li>
+                       <li>Yumurtalı kahvaltı tabağı 370 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+<div class="kahvaltiyazi_section">
+   <div class="container">
+       <div class="row kahvaltiyazi_entry">
+
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_image_container">
+                   <img src="images/kahvaltı2.png" alt="Kahvaltı Image" class="img-fluid" style="width: 500px; height: 300px; ">
+                   <p class="image_caption">Her gün 09.00-22.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="3">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_text_container">
+                   <h2 class="kahvaltiyazi_title" style="font-weight: bold;">Keyfi İkram / Yenicuma</h2>
+                   <p class="kahvaltiyazi_description">Yenicuma mevkinde hizmet veren Keyfi İkram, kahvaltı yapmak için en ideal alanlardan biri. Bu bölgenin en popüler noktası olan kafeler sokağında bulunan bu mekanda, serpme kahvaltı lezzetlerinin yanı sıra eko, zengin ve pişi ağırlıklı menülerin de tadına bakabilirsin. Keyfi İkram'ın geniş ve ferah ortamı, konforlu oturma alanları ile kahvaltı keyfini daha da artırıyor. Doğal ve taze ürünlerle hazırlanan kahvaltı çeşitleri, hem göze hem de damağa hitap ediyor. Eko menü ile hem sağlıklı hem de doyurucu bir kahvaltı yapabilir, zengin menüdeki çeşitlilikle damak zevkine uygun lezzetleri keşfedebilirsin. Pişi ağırlıklı menü ise kızarmış hamurun sıcak ve çıtır lezzetini sevenler için ideal bir seçenek.</p>
+                   <ul class="kahvaltiyazi_list">
+                       <li>Serpme kahvaltı 595 TL</li>
+                       <li>Eko kahvaltı 245 TL</li>
+                       <li>Zengin kahvaltı 295 TL</li>
+                       <li>Pişili kahvaltı 110 TL</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="kahvaltiyazi_section">
+   <div class="container">
+       <div class="row kahvaltiyazi_entry">
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_image_container">
+                   <img src="images/kahvaltı3.png" alt="Kahvaltı Image" class="img-fluid" style="width: 500px; height: 300px; ">
+                   <p class="image_caption">Her gün 06.30-23.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="3">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_text_container">
+                   <h2 class="kahvaltiyazi_title" style="font-weight: bold;">Pişkin Simit & Kahvaltı Salonu / Kemalpaşa</h2>
+                   <p class="kahvaltiyazi_description">İzmit’in önemli ulaşım yollarından birisi olan İstanbul-İzmit Karayolunun yakınlarında hizmet veren Pişkin Simit & Kahvaltı Salonu, güne erken başlayanların müdavimi olduğu bir yer. Burası, hem çalışanların hızlıca kahvaltı yapabileceği hem de ailelerin uzun saatler boyunca keyifle vakit geçirebileceği bir mekan olarak biliniyor. Menüsünde serpme kahvaltı, ekspres kahvaltı ve kahvaltı tabağı gibi birçok seçenek bulunan bu yerde, taze ve lezzetli ürünlerin tadını çıkarabilirsin. Serpme kahvaltıda; peynir çeşitleri, zeytin, domates, salatalık, bal, reçel ve daha birçok taze ürünü bulabilirsin. Ekspres kahvaltı, özellikle zamanı kısıtlı olanlar için ideal bir seçenek olup hızlı servis edilmesiyle biliniyor.</p>
+                   <ul class="kahvaltiyazi_list">
+                       <li>Serpme kahvaltı 650 TL</li>
+                       <li>Kahvaltı tabağı 275 TL</li>
+                       <li>Ekspres Kahvaltı 200 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+<div class="kahvaltiyazi_section">
+   <div class="container">
+       <div class="row kahvaltiyazi_entry">
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_image_container">
+                   <img src="images/kahvaltı4.png" alt="Kahvaltı Image" class="img-fluid" style="width: 500px; height: 300px; ">
+                   <p class="image_caption">Her gün 08.00-01.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="4">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_text_container">
+                   <h2 class="kahvaltiyazi_title" style="font-weight: bold;">Marina Cafe SekaPark / Kozluk</h2>
+                   <p class="kahvaltiyazi_description">Denizin kıyısında doyurucu ürünleri ile sana ve sevdiklerine kapılarını açan Marina Cafe SekaPark, serpme kahvaltı ile güne enerjik başlamanı sağlıyor. Geniş ve ferah oturma alanı, modern dekorasyonu ve huzur veren deniz manzarası ile bu mekan, hem göz zevkine hitap ediyor hem de lezzetli kahvaltı seçenekleri ile damak tadına uygun bir deneyim sunuyor. Menüsünde unlu mamullerden peynir çeşitlerine, termos çaydan közleme bibere kadar geniş bir yelpazeye yer veren bu mekanda doyduğunu hissedeceksin.</p>
+                   <ul class="kahvaltiyazi_list">
+                       <li>Serpme kahvaltı 600 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+<div class="kahvaltiyazi_section">
+   <div class="container">
+       <div class="row kahvaltiyazi_entry">
+
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_image_container">
+                   <img src="images/kahvaltı5.png" alt="Kahvaltı Image" class="img-fluid" style="width: 500px; height: 300px; ">
+                   <p class="image_caption">Her gün 08.00-00.00 saatleri arasında açık</p> <!-- Ufak yazı sadece resmin altında -->
+                   <div class="rating" data-rating="4">
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                    <span class="star">&starf;</span>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6">
+               <div class="kahvaltiyazi_text_container">
+                   <h2 class="kahvaltiyazi_title" style="font-weight: bold;">Şelale Park Cafe / Kemalpaşa</h2>
+                   <p class="kahvaltiyazi_description">İzmit’in tarihi ve kültürel noktalarından birisi olan Saat Kulesi’nin yanı başında kapılarını açan Şelale Park Cafe, serpme kahvaltı lezzetlerini misafirlerinin beğenisine sunuyor. Bu mekan, tarihi dokusuyla ünlü İzmit Saat Kulesine olan yakınlığı sayesinde, kahvaltını yaparken bir yandan da tarihi bir atmosferin tadını çıkarabileceğin eşsiz bir ortam sunuyor. Eşsiz manzarası eşliğinde yapacağın kahvaltı ile tüm lezzetleri aynı anda bulabilirsin. Şelale Park Cafenin menüsünde, sahanda sucuklu yumurta, zengin peynir tabağı, ev yapımı reçeller ve daha birçok kahvaltı ürünü seni bekliyor.</p>
+                   <ul class="kahvaltiyazi_list">
+                       <li>Serpme kahvaltı 600 TL</li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+   </div>
+</div>
+
+
+</div>
+<!-- Kahvaltı Yazı Section End -->
+
+        
+           
+            <!-- footer section start -->
+            <div class="footer_section">
+               <div class="container">
+                  <div class="footer_sectio_2">
+                     <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                           <h2 class="useful_text">Menü</h2>
+                           <div class="footer_menu">
+                              <ul>
+                                 <li><a href="index.html">Anasayfa</a></li>
+                                 <li class="active"><a href="service.html">Hizmetler</a></li>
+                                 <li><a href="blog.html">Fırsatlar</a></li>
+                                 <li><a href="about.html">Hakkımızda</a></li>
+                                 <li><a href="contact.html">İletişim</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <h2 class="useful_text">İLETİŞİM</h2>
+                           <div class="map_icon"><a href="https://www.google.com/maps/place/Red+Light+District+Residence+On+Ground+Floor/@52.3716886,4.8923058,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609c0ac20b159:0x8b4ac67c76ad9b1e!8m2!3d52.3716886!4d4.8944945!16s%2Fg%2F11hdj1ytlx"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left15">Pieter Jacobszstraat 25, 1012 HL Amsterdam, Hollanda</span></a></div>
+                           <div class="map_icon"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left15">+90 507 883 35 94</span></a></div>
+                           <div class="map_icon"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left15">info@jojo.com</span></a></div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="social_icon">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- footer section end -->
+         </div>
+      </div>
+      <!-- layout main section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">Tüm Haklar Jojo Holding Bünyesinde Saklıdır.</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+      <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+      </script> 
+   </body>
+</html>
